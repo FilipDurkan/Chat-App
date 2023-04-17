@@ -64,12 +64,13 @@ const Chat = ({ username, color }) => {
         </div>
       </div>
       <div className="chat-messages">
-        <div className="image-overlay"></div>
         {messages.map((message, index) => (
           <div
             key={index}
             className={`chat-message ${
-              message.username === username ? "chat-message-right" : ""
+              message.username === username
+                ? "chat-message-right"
+                : "chat-message-left"
             }`}
           >
             <div className="message-info">
@@ -81,7 +82,11 @@ const Chat = ({ username, color }) => {
                 <div className="username">{message.username}</div>
                 <div
                   className="message-text"
-                  style={{ borderLeftColor: message.color }}
+                  style={
+                    message.username === username
+                      ? { borderLeftColor: message.color }
+                      : { borderRightColor: message.color }
+                  }
                 >
                   {message.message}
                 </div>

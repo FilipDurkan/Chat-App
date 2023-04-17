@@ -84,8 +84,6 @@
   border-radius: 5px;
   padding: 2px 20px;
   margin-top: 10px;
-  border-right-width: thick;
-  border-right-style: solid;
   max-width: 550px;
 }
 
@@ -96,19 +94,13 @@
 }
 
 .chat-message-right .message-text {
-  background-color: #f2f2f2;
-  color: black;
-  font-weight: bold;
-  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
-    0px 4px 25px rgba(0, 0, 0, 0.5);
-  font-size: 1.2em;
-  line-height: 2;
-  border-radius: 5px;
-  padding: 2px 20px;
-  margin-top: 10px;
   border-left-width: thick;
   border-left-style: solid;
-  max-width: 550px;
+}
+
+.chat-message-left .message-text {
+  border-right-width: thick;
+  border-right-style: solid;
 }
 
 .chat-input {
