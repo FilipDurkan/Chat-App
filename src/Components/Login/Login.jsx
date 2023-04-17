@@ -33,6 +33,7 @@ const LoginForm = ({ onLogin }) => {
             onChange={handleUsernameChange}
           />
         </div>
+
         <div>
           <label htmlFor="color-input">Color:</label>
           <input
@@ -42,7 +43,9 @@ const LoginForm = ({ onLogin }) => {
             onChange={handleColorChange}
           />
         </div>
-        <button type="submit">Log in</button>
+        <button type="submit" className="chat-send-button">
+          Log in
+        </button>
       </form>
     </div>
   );

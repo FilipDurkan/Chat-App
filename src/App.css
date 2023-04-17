@@ -1,0 +1,8 @@
+body {
+  background-image: URL("./Assets/chat-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  color: #202a44;
+  margin: 0;
+}

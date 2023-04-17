@@ -57,13 +57,14 @@ const Chat = ({ username, color }) => {
   return (
     <div className="chat-container">
       <div className="chat-header">
-        <h2>Space Chat</h2>
+        <h2>Cloud Chat</h2>
         <div className="user-info">
           <span className="username">{username}</span>
           <div className="user-color" style={{ backgroundColor: color }}></div>
         </div>
       </div>
       <div className="chat-messages">
+        <div className="image-overlay"></div>
         {messages.map((message, index) => (
           <div
             key={index}
@@ -72,13 +73,18 @@ const Chat = ({ username, color }) => {
             }`}
           >
             <div className="message-info">
-              <div
+              {/* <div
                 className="user-color"
                 style={{ backgroundColor: message.color }}
-              ></div>
+              ></div> */}
               <div className="chat-message-content">
                 <div className="username">{message.username}</div>
-                <div className="message-text">{message.message}</div>
+                <div
+                  className="message-text"
+                  style={{ borderLeftColor: message.color }}
+                >
+                  {message.message}
+                </div>
               </div>
             </div>
           </div>
