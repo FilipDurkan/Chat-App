@@ -84,6 +84,8 @@
   border-radius: 5px;
   padding: 2px 20px;
   margin-top: 10px;
+  border-right-width: thick;
+  border-right-style: solid;
   max-width: 550px;
 }
 
